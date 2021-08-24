@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  height: 100vh;
+  font-family: 'Space Mono', monospace;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  background-color: #c5e4e7;
+  text-align: center;
+}
+
+.logo {
+  margin: 7rem 0 3rem;
+}
+
+.subtitle {
+  text-align: left;
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  line-height: 2.37rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3.2rem;
+  width: 92rem;
+  height: 48.1rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+}
+
+.left {
+  padding: 2rem 4.8rem 2rem 1.6rem;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left .form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.left .input-long {
+  padding: .5rem 1rem;
+  border: 3px solid transparent;
+  background-color: #f4fafa;
+  font-size: 2.4rem;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  line-height: 3.554rem;
+  text-align: right;
+  border-radius: 4px;
+}
+
+.left .wrong-border {
+  border: 3px solid red;
+  border-radius: 4px;
+}
+
+.left input:focus-visible,
+.left .input-long:hover {
+  outline: none;
+  border: 3px solid #26c0ab;
+  border-radius: 8px;
+  border-radius: 4px;
+}
+
+.left .wrong-border:hover,
+.left .wrong-border:focus-visible {
+  border: 3px solid red;
+}
+
+.left .bill::before {
+  position: absolute;
+  left: 10px;
+  top: 52px;
+  content: '';
+  background-image: url("../images/icon-dollar.svg");
+  background-position: center;
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  color: #00494d;
+}
+
+.left .people::before {
+  position: absolute;
+  left: 10px;
+  top: 52px;
+  content: '';
+  background-image: url("../images/icon-person.svg");
+  background-position: center;
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  color: #00494d;
+}
+
+.left .wrapper-tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.left .tip-percent {
+  padding: .7rem 0;
+  margin-bottom: 1rem;
+  margin-right: .3rem;
+  width: 11.7rem;
+  border-radius: 4px;
+  background-color: #00494d;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  border: 3px solid transparent;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3.554rem;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.left .tip-percent:hover {
+  background-color: #26c0ab;
+}
+
+.left .custom {
+  background-color: #f4fafa;
+  color: #00494d;
+}
+
+.left .custom:hover {
+  background-color: #f4fafa;
+  border: 3px solid #26c0ab;
+}
+
+.left .wrong {
+  border-radius: 8px;
+  border: 3px solid red;
+}
+
+.left .wrong:hover {
+  border: 3px solid red;
+}
+
+.left .info {
+  font-size: 1.2rem;
+  color: red;
+  margin: 0 auto;
+}
+
+.right {
+  width: 50%;
+  padding: 4rem;
+  background-color: #00494d;
+  border-radius: 15px;
+}
+
+.right .wrapper-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.right .wrapper-right .number {
+  font-size: 4.8rem;
+  line-height: 7.109rem;
+  color: #26c0ab;
+  font-weight: bold;
+}
+
+.right .wrapper-right .subtitle span {
+  font-size: 1.3rem;
+  line-height: 1.925rem;
+  color: #26c0ab;
+}
+
+.right .wrapper-total {
+  padding-top: 4.1rem;
+}
+
+.right .reset {
+  margin-top: 11.2rem;
+  width: 100%;
+  padding: .8rem 0;
+  background-color: #5e7a7d;
+  font-family: 'Space Mono', monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00494d;
+  line-height: 2.962rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+.right .reset:hover {
+  background-color: #26c0ab;
+}
+
+.click {
+  background-color: #26c0ab !important;
+}
+
+.clickBtn {
+  background-color: #26c0ab !important;
+}
+/*# sourceMappingURL=style.css.map */

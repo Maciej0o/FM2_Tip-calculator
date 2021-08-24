@@ -1,0 +1,242 @@
+// COLORS
+$main-color: hsl(172, 67%, 45%);
+$dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan1: hsl(186, 14%, 43%);
+$dark-grayish-cyan2: hsl(184, 14%, 56%);
+$light-cyan1: hsl(185, 41%, 84%);
+$light-cyan2: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.4rem;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+}
+
+main {
+    position: relative;
+    height: 100%;
+    background-color: $light-cyan1;
+    text-align: center;
+}
+
+.logo {
+    margin: 7rem 0 3rem;
+}
+
+.subtitle {
+    text-align: left;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    line-height: 2.37rem;
+}
+.container {
+    margin: 0 auto;
+    padding: 3.2rem;
+    width: 92rem;
+    height: 48.1rem;
+    background-color: $white;
+    display: flex;
+    border-radius: 15px;
+}
+
+.left {
+    padding: 2rem 4.8rem 2rem 1.6rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-long {
+        padding: .5rem 1rem;
+        border: 3px solid transparent;
+        background-color: $light-cyan2;
+        font-size: 2.4rem;
+        font-family: 'Space Mono', monospace;
+        font-weight: bold;
+        line-height: 3.554rem;
+        text-align: right;
+        border-radius: 4px;
+    }
+
+    .wrong-border {
+        border: 3px solid red;
+        border-radius: 4px;
+    }
+
+    input:focus-visible,
+    .input-long:hover {
+        outline:  none;
+        border: 3px solid $main-color;
+        border-radius: 8px;
+        border-radius: 4px;
+    }
+
+    .wrong-border:hover,
+    .wrong-border:focus-visible {
+        border: 3px solid red;
+    }
+
+    .bill::before {
+        position: absolute;
+        left: 10px;
+        top: 52px;
+        content: '';
+        background-image: url('../images/icon-dollar.svg');
+        background-position: center;
+        background-size: cover;
+        width: 12px;
+        height: 12px;
+        color: $dark-cyan;
+    }
+
+    .people::before {
+        position: absolute;
+        left: 10px;
+        top: 52px;
+        content: '';
+        background-image: url('../images/icon-person.svg');
+        background-position: center;
+        background-size: cover;
+        width: 12px;
+        height: 12px;
+        color: $dark-cyan;
+    }
+
+
+    .wrapper-tip {
+        display: flex;
+        flex-wrap: wrap;
+
+        
+    }
+    .tip-percent {
+        padding: .7rem 0;
+        margin-bottom: 1rem;
+        margin-right: .3rem;
+        width: 11.7rem;
+        border-radius: 4px;
+        background-color: $dark-cyan;
+        color: $white;
+        font-family: 'Space Mono', monospace;
+        text-align: center;
+        border: 3px solid transparent;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 3.554rem;
+        cursor: pointer;
+        transition: .2s;
+
+        &:hover {
+            background-color: $main-color;
+        }
+
+
+    }
+
+    .custom {
+        background-color: $light-cyan2;
+        color: $dark-cyan;
+
+        &:hover {
+            background-color: $light-cyan2;
+            border: 3px solid $main-color;
+        }
+    }
+
+    .wrong {
+        border-radius: 8px;
+        border: 3px solid red;
+
+        &:hover {
+            border: 3px solid red;
+        }
+    }
+
+    .info {
+        font-size: 1.2rem;
+        color: red;
+        margin: 0 auto;
+    }
+}
+
+.right {
+    width: 50%;
+    padding: 4rem;
+    background-color: $dark-cyan;
+    border-radius: 15px;
+
+    .wrapper-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+
+        .number {
+            font-size: 4.8rem;
+            line-height: 7.109rem;
+            color: $main-color;
+            font-weight: bold;
+        }
+
+        .subtitle span {
+            font-size: 1.3rem;
+            line-height: 1.925rem;
+            color: $main-color;
+        }
+    }
+
+    .wrapper-total {
+        padding-top: 4.1rem;
+    }
+
+    .reset {
+        margin-top: 11.2rem;
+        width: 100%;
+        padding: .8rem 0;
+        background-color: $dark-grayish-cyan1;
+        font-family: 'Space Mono', monospace;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $dark-cyan;
+        line-height: 2.962rem;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        transition: background-color .2s;
+    }
+
+    .reset:hover {
+        background-color: $main-color;
+    }
+   
+    
+}
+
+.click {
+    background-color: $main-color !important;
+}
+
+.clickBtn {
+    background-color: $main-color !important;
+}
+
+
