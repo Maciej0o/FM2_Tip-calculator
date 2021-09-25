@@ -1,3 +1,5 @@
+https://maciej0o.github.io/FM2_Tip-calculator/
+
 # Frontend Mentor - Tip calculator app
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
